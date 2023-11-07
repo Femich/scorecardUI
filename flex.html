@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        section{
+            font-family: 'Hanken Grotesk', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: rgb(255, 255, 255);
+        }
+        .main{
+            width: 80vh;
+            height: 55vh;
+            background: #fff;
+            display: flex;
+            border-radius: 25px;
+            box-shadow: 5px 5px 15px  hsla(241, 81%, 54%, 0.2);
+        }
+        .col1{
+            width: 100%;
+            background: linear-gradient( to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            border-radius: 25px;
+            padding: 10px 15px 10px 15px;
+            text-align: center;
+        }
+        .col2{
+            width: 100%;
+            background-color: transparent;
+            border-radius: 25px;
+            text-align: center;
+            padding: 0px 10px 20px 15px;
+        }
+        .score{
+            margin: auto;
+            height: 125px;
+            width: 125px;
+            background: linear-gradient( to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+            border-radius: 100px;
+            text-align: center;
+        }
+        h3{
+            font-size: 15px;
+            font-weight: 700;
+            opacity: 80%;
+        }
+        button{
+            width: 200px;
+            height: 35px;
+            background:  hsl(241, 81%, 54%);
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            border-radius: 20px;
+            margin-top: 10px;
+            outline: none;
+            border: 1px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .sub{
+            padding: 5px 0 0 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="col1">
+                <h3>Your Result</h3>
+                <div class="score">
+                    <h1 style="margin: 0; padding: 0; font-size: 50px; font-weight: 800; padding: 25px 0 0;">76</h1>
+                    <p style="margin: 0; padding: 0; font-weight: 500; font-size: 12px; opacity: 60%;">of 100</p>
+                </div>
+                <h2 style="padding-top: 10px;">Great</h2>
+                <p style="font-size: 12px; margin: 0px; padding: 0; opacity: 80%;">You scored higher than 65% of <br>the people who have taken <br>these tests.</p>
+            </div>
+            <div class="col2">
+                <h3 style="color: black; text-align: start; margin: 25px 0 5px 12px; font-weight: 800;">Summary</h3>
+                <div class="sub">
+                    <div class="row1" style="display: flex; width: 200px; height: 40px; background-color: hsla(0, 100%, 67%, 0.09); margin: 10px 0 10px 0; border-radius: 10px; justify-content: space-between; align-items: center;">
+                        <img src="assets/images/icon-reaction.svg" height="15px" style=" padding-left: 10px;">
+                        <p style=" padding-right: 32px; color: hsl(0, 100%, 67%);">Reaction</p>
+                        <p style="padding-right: 10px; display: flex; color: black;"><span style="font-weight: 800; padding-right: 5px;">80 </span> <span style="opacity: 50%;">/100</span></p>
+                    </div>
+                    <div class="row2" style="display: flex; width: 200px; height: 40px; background: hsla(39, 100%, 56%, 0.09); margin: 10px 0 10px 0; border-radius: 10px; justify-content: space-between; align-items: center;">
+                        <img src="assets/images/icon-memory.svg" height="15px" style=" padding-left: 10px;">
+                        <p style="padding-right: 35px; color: hsl(39, 100%, 56%)">Memory</p>
+                        <p style="padding-right: 10px; display: flex; color: black;"><span style="font-weight: 800; padding-right: 5px;">92</span><span style="opacity: 50%;">/100</span></p>
+                    </div>
+                    <div class="row3" style="display: flex; width: 200px; height: 40px; margin: 10px 0 10px 0; background: hsla(166, 100%, 37%, 0.09); border-radius: 10px; justify-content: space-between; align-items: center;">
+                        <img src="assets/images/icon-verbal.svg" height="15px" style=" padding-left: 10px;">
+                        <p style="padding-right: 47px; color: hsl(166, 100%, 37%)">Verbal</p>
+                        <p style="padding-right: 10px; display: flex; color: black;"><span style="font-weight: 800; padding-right: 5px;">61</span><span style="opacity: 50%;">/100</span></p>
+                    </div>
+                    <div class="row4" style="display: flex; width: 200px; height: 40px; margin: 10px 0 10px 0; background: hsla(234, 85%, 45%, 0.09); border-radius: 10px; justify-content: space-between; align-items: center;">
+                        <img src="assets/images/icon-visual.svg" height="15px" style=" padding-left: 10px;">
+                        <p style="padding-right: 50px; color: hsl(234, 85%, 45%)">Visual</p>
+                        <p style="padding-right: 10px; display: flex; color: black;"><span style="font-weight: 800; padding-right: 5px;">72</span><span style="opacity: 50%;">/100</span></p>
+                    </div>
+                </div>
+                <div class="row5" style="margin-top: 20px;">
+                    <button type="submit">Continue</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
